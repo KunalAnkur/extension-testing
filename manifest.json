@@ -1,1 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "WebRequest Demo",
+    "version": "1.0",
+    "description": "A simple Chrome extension to log completed network requests.",
+    "permissions": ["webRequest", "webRequestBlocking", "storage", "activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "browser_action": {
+      "default_icon": {
+        "48": "icon.png"
+      },
+      "default_title": "WebRequest Demo"
+    }
+  }
 
