@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "WebRequest Demo",
+    "name": "Response Interceptor",
     "version": "1.0",
-    "description": "A simple Chrome extension to log completed network requests.",
-    "permissions": ["webRequest", "<all_urls>"],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": true
-    }
-  }
+    "permissions": ["<all_urls>"],
+    "content_scripts": [
+        {
+            "js": ["content.js"]
+        }
+    ]
+}
