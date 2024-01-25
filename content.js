@@ -1,3 +1,4 @@
+console.log("intercept is injected")
 const originalOpen = XMLHttpRequest.prototype.open;
 XMLHttpRequest.prototype.open = function(method, url) {
     this.addEventListener('load', function() {
